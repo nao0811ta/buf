@@ -25,7 +25,7 @@ package buf.alpha.breaking.v1;
 // and category IDs in the future. Callers will need to resolve the rule and category ID strings.
 message Config {
   // version represents the version of the breaking change rule and category IDs that should be used with this config.
-  string version = 1;
+  int32 version = 1;
   // use_ids lists the rule and/or category IDs that are included in the breaking change check.
   repeated string use_ids = 2;
   // except_ids lists the rule and/or category IDs that are excluded from the breaking change check.
